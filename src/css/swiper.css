@@ -1,0 +1,90 @@
+#app {
+  height: 100%;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 30.99vw; /* Adjust height to content */
+  padding: 20px 0; /* Add some vertical padding */
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.swiper-slide {
+  text-align: left; /* Align text to the left as in the image */
+  font-size: 18px;
+  background: #fff;
+  border-radius: 40px; /* Add the rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  width: 15.625vw; /* Keep the width */
+  height: 30.99vw; /* Adjust height to content */
+  flex-shrink: 0; /* Prevent slides from shrinking */
+  margin-right: 30px; /* Add spacing between slides */
+  position: relative; /* For overlay positioning */
+  overflow: hidden; /* Clip content outside border-radius */
+}
+
+/* Remove the flex centering for the entire slide content */
+/*.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+.swiper-slide img {
+  display: block;
+  width: 15.625vw; /* Keep the width */
+  height: 30.99vw; /* Adjust height proportionally */
+  object-fit: cover; /* Cover the area without distortion */
+  border-radius: 40px 40px 0 0; /* Rounded corners at the top */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15.625vw;
+  height: 30.99vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align text to the top */
+  align-items: flex-start; /* Align text to the left */
+  padding: 20px; /* Add padding to the text */
+  color: #fff; /* Set text color */
+  box-sizing: border-box; /* Include padding in width and height */
+  border-radius: 40px; /* Match slide border-radius */
+}
+
+/* Style the text elements */
+.text-overlay h3 {
+  font-size: 1.2vw; /* Adjust font size */
+  margin-bottom: 10px;
+}
+
+.text-overlay p {
+  font-size: 0.8vw; /* Adjust font size */
+  line-height: 1.2;
+}
+
+/* Adjust the swiper container padding to accommodate partial visibility */
+.swiper {
+  padding-left: 5vw; /* Example: Adjust based on desired partial visibility */
+}

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap');
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.product-detail-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  padding-top: 5.729vw;
+  padding-left: 5.729vw;
+}
+
+.wrapper h1 {
+  font-size: 2.917vw;
+  margin-bottom: 2.083vw; /* Add some space below the title */
+}
+
+.text-overlay {
+  position: absolute;
+  padding-left: 2.083vw;
+  padding-top: 2.083vw;
+  width: 15.625vw;
+  left: 0;
+  height: 30.99vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 40px;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+.text-overlay h3 {
+  font-size: 0.625vw;
+  margin-bottom: 0.521vw; /* Adjust margin */
+}
+
+.text-overlay p {
+  font-size: 0.833vw;
+}
+
+.black {
+  color: black;
+}
