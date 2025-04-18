@@ -7,6 +7,7 @@
 .product-detail-container {
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -25,8 +26,6 @@
 
 .text-overlay {
   position: absolute;
-  padding-left: 2.083vw;
-  padding-top: 2.083vw;
   width: 15.625vw;
   left: 0;
   height: 30.99vw;
@@ -43,7 +42,7 @@
 
 .text-overlay h3 {
   font-size: 0.625vw;
-  margin-bottom: 0.521vw; /* Adjust margin */
+  margin: 0;
 }
 
 .text-overlay p {
